@@ -102,17 +102,17 @@ namespace DL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("MessageID")
+                    b.Property<int>("ID_MESSAGE")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserID")
+                    b.Property<int>("ID_USER")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MessageID");
+                    b.HasIndex("ID_MESSAGE");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("ID_USER");
 
                     b.ToTable("UserMessages");
                 });
@@ -143,13 +143,13 @@ namespace DL.Migrations
                 {
                     b.HasOne("DL.Entities.Message", "Message")
                         .WithMany("Users")
-                        .HasForeignKey("MessageID")
+                        .HasForeignKey("ID_MESSAGE")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("DL.Entities.User", "User")
                         .WithMany("Messages")
-                        .HasForeignKey("UserID")
+                        .HasForeignKey("ID_USER")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

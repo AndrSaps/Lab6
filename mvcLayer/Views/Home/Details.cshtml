@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+ <!DOCTYPE html>
+  
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+     <title>Лабораторна робота 6</title>
+ </head>
+ <body>
+     <div>
+         <h3>Сторінка деталей</h3>
+         <h3>Інформація про користувача:</h3>
+         <p>Імя: @ViewBag.User.FirstName</p>
+         <p>Прізвище: @ViewBag.User.LastName</p>
+         <p>Вік: @ViewBag.User.Age</p>
+         <p>Стать: @ViewBag.User.Sex</p>
+
+         <h3>Інформація про його повідомлення:</h3>
+         <table>
+             <tr>
+                 <td><p>Текст</p></td>
+                 <td><p>Автор</p></td>
+                 <td><p>Статус</p></td>
+             </tr>
+             @foreach (var b in ViewBag.User.Messages)
+             {
+                 <tr>
+                     <td><p>@b.Message.Text</p></td>
+                     <td><p>@b.Message.Author</p></td>
+                     <td><p>@b.Message.Status</p></td>
+                     <td><p><a href="/Home/EditMessage/@b.ID_MESSAGE">Редагувати</a></p></td>
+                 </tr>
+             }
+         </table>
+         <h3>Інформація про його права:</h3>
+         <table>
+             <tr>
+                 <td><p>Текст</p></td>
+                 <td><p>Вік від</p></td>
+                 <td><p>Від до</p></td>
+                 <td><p>Категорія</p></td>
+             </tr>
+             @foreach (var b in ViewBag.User.Rights)
+             {
+                 <tr>
+                     <td><p>@b.Right.Text</p></td>
+                     <td><p>@b.Right.AgeFrom</p></td>
+                     <td><p>@b.Right.AgeTo</p></td>
+                     <td><p>@b.Right.Category</p></td>
+                     <td><p><a href="/Home/EditRight/@b.RightID">Редагувати</a></p></td>
+                 </tr>
+             }
+         </table>
+     </div>
+ </body>
+</html>
+
+
+
+             @*namespace DL.Entities
+             {
+             public class User:BaseEntity
+             {
+             [Required]
+             public string FirstName { get; set; }
+
+             [Required]
+             public string LastName { get; set; }
+
+             public int Age { get; set; }
+
+             public string Sex { get; set;}
+             public string Email { get; set; }
+
+             public virtual ICollection
+             <UserMessage>
+                 Messages { get; set; }
+
+                 public virtual ICollection<UserRight>
+                     Rights { get; set; }
+                     }
+                     }*@

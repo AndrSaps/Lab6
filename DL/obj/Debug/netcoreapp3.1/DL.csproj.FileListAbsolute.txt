@@ -21,3 +21,14 @@ C:\Users\Andrii\source\repos\Lab5\DL\obj\Debug\netcoreapp3.1\DL.csproj.CoreCompi
 C:\Users\Andrii\source\repos\Lab5\DL\obj\Debug\netcoreapp3.1\DL.dll
 C:\Users\Andrii\source\repos\Lab5\DL\obj\Debug\netcoreapp3.1\DL.pdb
 C:\Users\Andrii\source\repos\Lab5\DL\obj\Debug\netcoreapp3.1\DL.genruntimeconfig.cache
+C:\Users\Andrii\source\repos\Lab6\DL\bin\Debug\netcoreapp3.1\DL.deps.json
+C:\Users\Andrii\source\repos\Lab6\DL\bin\Debug\netcoreapp3.1\DL.runtimeconfig.json
+C:\Users\Andrii\source\repos\Lab6\DL\bin\Debug\netcoreapp3.1\DL.runtimeconfig.dev.json
+C:\Users\Andrii\source\repos\Lab6\DL\bin\Debug\netcoreapp3.1\DL.dll
+C:\Users\Andrii\source\repos\Lab6\DL\bin\Debug\netcoreapp3.1\DL.pdb
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.AssemblyInfoInputs.cache
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.AssemblyInfo.cs
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.csproj.CoreCompileInputs.cache
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.dll
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.pdb
+C:\Users\Andrii\source\repos\Lab6\DL\obj\Debug\netcoreapp3.1\DL.genruntimeconfig.cache

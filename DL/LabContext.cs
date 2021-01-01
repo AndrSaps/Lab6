@@ -23,7 +23,7 @@ namespace DL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =DESKTOP-P54RJ2G\\SQLEXPRESS;Database=Lab1_7;; Trusted_Connection = True; MultipleActiveResultSets = true", x => x.MigrationsAssembly("DL"));
+            optionsBuilder.UseSqlServer("Server =DESKTOP-P54RJ2G\\SQLEXPRESS;Database=Lab6;; Trusted_Connection = True; MultipleActiveResultSets = true", x => x.MigrationsAssembly("DL"));
         }
 
     }
