@@ -154,3 +154,4 @@ C:\Users\Andrii\source\repos\Lab6\mvcLayer\obj\Debug\netcoreapp3.1\mvcLayer.cspr
 C:\Users\Andrii\source\repos\Lab6\mvcLayer\obj\Debug\netcoreapp3.1\mvcLayer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Andrii\source\repos\Lab6\mvcLayer\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditMessage.cshtml.g.cs
 C:\Users\Andrii\source\repos\Lab6\mvcLayer\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditRight.cshtml.g.cs
+C:\Users\Andrii\source\repos\Lab6\mvcLayer\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateMessage.cshtml.g.cs

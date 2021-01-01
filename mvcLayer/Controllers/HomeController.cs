@@ -62,6 +62,25 @@ namespace mvcLayer.Controllers
         }
 
         [HttpGet]
+        public IActionResult CreateMessage()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult CreateMessage(Message message)
+        {
+            var repository = new Repository<Message>();
+
+            repository.Create(message);
+
+
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
         public IActionResult EditRight(int Id)
         {
             var repository = new Repository<Right>();
