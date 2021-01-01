@@ -5289,11 +5289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrii\\source\\repos\\Lab5\\DL\\DL.csproj",
+      "projectUniqueName": "C:\\Users\\Andrii\\source\\repos\\Lab6\\DL\\DL.csproj",
       "projectName": "DL",
-      "projectPath": "C:\\Users\\Andrii\\source\\repos\\Lab5\\DL\\DL.csproj",
+      "projectPath": "C:\\Users\\Andrii\\source\\repos\\Lab6\\DL\\DL.csproj",
       "packagesPath": "C:\\Users\\Andrii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrii\\source\\repos\\Lab5\\DL\\obj\\",
+      "outputPath": "C:\\Users\\Andrii\\source\\repos\\Lab6\\DL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
