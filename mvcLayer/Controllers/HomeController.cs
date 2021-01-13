@@ -40,6 +40,8 @@ namespace mvcLayer.Controllers
             return View();
         }
 
+
+
         [HttpGet]
         public IActionResult EditMessage(int Id)
         {
@@ -51,6 +53,18 @@ namespace mvcLayer.Controllers
         }
 
 
+        [HttpGet]
+        public IActionResult DeleteMessage(int Id)
+        {
+            var repository = new Repository<Message>();
+
+            Message message = repository.GetById(Id);
+
+            repository.Remove(message);
+
+            return RedirectToAction("Index");
+        }
+
         [HttpPost]
         public IActionResult EditMessage(Message message)
         {
@@ -59,22 +73,35 @@ namespace mvcLayer.Controllers
             repository.Update(message);
 
             return RedirectToAction("Index");
+
         }
 
         [HttpGet]
-        public IActionResult CreateMessage()
+        public IActionResult CreateMessage(int Id)
         {
+            ViewBag.Id = Id;
+
             return View();
         }
 
 
-        [HttpPost]
-        public IActionResult CreateMessage(Message message)
+        [HttpPost("{id}")]
+        public IActionResult CreateMessage(Message message, int UserId)
         {
             var repository = new Repository<Message>();
+            message.Id = 0;
 
             repository.Create(message);
 
+            message.Users = new List<UserMessage>();
+
+            message.Users.Add(new UserMessage()
+            {
+                ID_MESSAGE = message.Id,
+                ID_USER = UserId
+            });
+
+            repository.Update(message);
 
 
             return RedirectToAction("Index");
